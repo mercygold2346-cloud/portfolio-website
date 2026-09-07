@@ -82,6 +82,32 @@ export const featuredGalleryImages: GalleryImage[] = [
     objectPosition: "center 30%",
     wide: true,
   },
+  {
+    id: "jungle-escape",
+    src: "/images/projects/temple-run.png",
+    alt: "Jungle Escape endless runner game",
+    category: "Browser Game",
+    title: "Jungle Escape — Interactive play",
+    objectPosition: "center top",
+  },
+  {
+    id: "mercy-marketing",
+    src: "/images/projects/mercy-marketing-store.png",
+    alt: "Mercy Marketing Store e-commerce",
+    category: "E-Commerce",
+    title: "Mercy Store — Fashion & gadgets",
+    objectPosition: "center top",
+    wide: true,
+  },
+  {
+    id: "mercy-hospitality",
+    src: "/images/projects/mercy-hospitality.png",
+    alt: "Mercy Hospitality luxury hotel website",
+    category: "Hospitality",
+    title: "Mercy Hospitality — Luxury suites",
+    objectPosition: "center top",
+    tall: true,
+  },
 ];
 
 export const workspaceVisuals = [

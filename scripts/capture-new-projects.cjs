@@ -8,18 +8,6 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const shots = [
   {
-    url: "https://mono-store-website.vercel.app/",
-    out: path.join(outDir, "mono-store.png"),
-  },
-  {
-    url: "https://cardshark-insight-suite.vercel.app/",
-    out: path.join(outDir, "cardshark.png"),
-  },
-  {
-    url: "https://style-hub-gamma.vercel.app/",
-    out: path.join(outDir, "style-hub.png"),
-  },
-  {
     url: "https://temple-run1.vercel.app/",
     out: path.join(outDir, "temple-run.png"),
   },
@@ -40,7 +28,7 @@ const shots = [
   for (const { url, out } of shots) {
     console.log("Capturing", url);
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 90000 });
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(3500);
     await page.screenshot({ path: out, fullPage: false });
     console.log("Saved", out);
   }
